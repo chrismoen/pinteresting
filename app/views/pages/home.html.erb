@@ -1,11 +1,14 @@
-<div class="jumbotron center">
-	<h1>Welcome to my app</h1>
-
 	<% if user_signed_in? %>
-		# Do something
+			<div class="jumbotron center">
+	<h2>	# Hola</h2>
 	<% else %>
+		<div class="jumbotron center">
+	<h1>Recipe for press</h1>
+	<p>
+	<h3>Find and directly contact journalists in your industry with the right pitch</h3>
+	</p>
+<br>
 		<p>
-			<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
 			<%= link_to "Sign up",	new_user_registration_path, class: "btn btn-primary btn-lg" %>
 		</p>
 		<% end %>
